@@ -28,8 +28,16 @@ public class Test {
         NetworkTableInstance.getDefault().getTable("limelight").getEntry("botpose"); /*Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw), total latency
         (cl+tl)*/
 
-        //Camera - April tag coordinates
+        //Camera coordinates as related from April tag coordinates
         NetworkTableInstance.getDefault().getTable("limelight").getEntry("camerapose_targetspace");
+        getDoubleArray(new double[6]);
+
+        //Robot coordinates as related to the April tag
+        NetworkTableInstance.getDefault().getTable("limelight").getEntry("target-pose_targetspace");
+        getDoubleArray(new double[6]);
+
+        //April tag coordinates as related to the robot
+        NetworkTableInstance.getDefault().getTable("limelight").getEntry("bot-pose_robotspace");
         getDoubleArray(new double[6]);
 
         //April tag ID
