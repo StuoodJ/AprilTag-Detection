@@ -1,15 +1,15 @@
 //might work
 import LimelightHelpers;
-double tx = LimelightHelpers.getTX("");
-double ty = LimelightHelpers.getTY("");
-double ta = LimelightHelpers.getTA("");
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableEntry;
 import edu.wpi.first.networktables.NetworkTableInstance;
 
-main{
-  public void{strings[] args) {
+public class Networktablelimelight{
+  double tx = LimelightHelpers.getTX("");
+  double ty = LimelightHelpers.getTY("");
+  double ta = LimelightHelpers.getTA("");
+  public void limelightvalues() {
     double botpose = LimelightHelpers.getBotpose("")
     NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
     // NetworkTableEntry botpose = table.getEntry("t6r_fs");
