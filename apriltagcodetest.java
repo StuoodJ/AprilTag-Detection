@@ -30,4 +30,13 @@ public class Networktablelimelight{
     SmartDashboard.putNumber("LimelightY", y);
     SmartDashboard.putNumber("LimelightArea", area);
     }
+    import edu.wpi.first.wpiutil.net.PortForwarder;
+    @Override
+  public void robotInit() {
+        // Make sure you only configure port forwarding once in your robot code.
+        // Do not place these function calls in any periodic functions
+        for (int port = 5800; port <= 5807; port++) {
+            PortForwarder.add(port, "limelight.local", port);
+        }
+    }
 }
