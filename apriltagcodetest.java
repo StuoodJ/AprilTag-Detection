@@ -12,7 +12,7 @@ main{
   public void{strings[] args) {
     double botpose = LimelightHelpers.getBotpose("")
     NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
-    NetworkTableEntry botpose = table.getEntry("botpose");
+    NetworkTableEntry botpose = table.getEntry("t6r_fs");
     NetworkTableEntry tx = table.getEntry("tx");
     NetworkTableEntry ty = table.getEntry("ty");
     NetworkTableEntry ta = table.getEntry("ta");
